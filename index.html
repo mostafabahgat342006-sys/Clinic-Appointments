@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Appointments</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f7fb;
+      color: #203047;
+    }
+    header {
+      background: linear-gradient(120deg, #145da0, #20a4a8);
+      color: white;
+      padding: 65px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 42px; margin-bottom: 12px; }
+    header p { font-size: 18px; }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+    .section-title { text-align: center; margin-bottom: 25px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 4px 15px #00000010;
+    }
+    .card h3 { color: #145da0; }
+    .team { text-align: center; }
+    .button {
+      display: inline-block;
+      background: #145da0;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    footer {
+      background: #203047;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Clinic Appointments</h1>
+    <p>Doctor Appointment Booking System</p>
+    <p>A Software Engineering Team Project</p>
+    <a class="button"
+       href="https://github.com/mostafabahgat342006-sys/Clinic-Appointments">
+       View GitHub Repository
+    </a>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">About Our Project</h2>
+    <div class="card">
+      <p>
+        Clinic Appointments is a Python-based project
+        designed to demonstrate a simple doctor appointment
+        booking system. It allows patients to view available
+        time slots and request appointments, while doctors
+        can accept or reject booking requests.
+      </p>
+    </div>
+
+    <h2 class="section-title">System Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Available Time Slots</h3>
+        <p>Patients can view available doctor time slots.</p>
+      </div>
+      <div class="card">
+        <h3>Appointment Booking</h3>
+        <p>Patients can submit appointment requests.</p>
+      </div>
+      <div class="card">
+        <h3>Doctor Approval</h3>
+        <p>Doctors can accept or reject appointments.</p>
+      </div>
+      <div class="card">
+        <h3>Booking Limit</h3>
+        <p>Each patient can have up to 3 upcoming appointments.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Our Team</h2>
+    <div class="cards team">
+      <div class="card">
+        <h3>Mostafa Bahgat Salah</h3>
+        <p>Student ID: 20240591</p>
+      </div>
+      <div class="card">
+        <h3>Tarek Osama Farouk</h3>
+        <p>Student ID: 20240284</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Clinic Appointments | Software Engineering Project
+  </footer>
+</body>
+</html>
